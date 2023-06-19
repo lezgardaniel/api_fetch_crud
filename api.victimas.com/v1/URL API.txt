@@ -1,0 +1,45 @@
+USUARIOS
+
+POST
+Registro
+http://localhost/api.victimas.com/v1/usuarios/registro
+
+{
+    "nombre": "daniel",
+    "contrasena": "daniel123",
+    "correo": "daniel@gmail.com"
+}
+
+
+http://localhost/api.victimas.com/v1/victimas
+{
+    "primerNombre": "jon",
+    "primerApellido": "garcia",
+    "edad": 23,
+    "genero": "masculino",
+    "telefono": "9831814345",
+    "idUsuario": "6"
+}
+
+
+Login
+http://localhost/api.victimas.com/v1/usuarios/login
+
+{
+    "correo": "test@gmail.com",
+    "contrasena": "test123"
+}
+
+***GET***
+listarTodos
+http://localhost/api.victimas.com/v1/usuarios
+
+listarPorId
+http://localhost/api.victimas.com/v1/usuarios/2
+
+listarPorRango
+http://localhost/api.victimas.com/v1/usuarios/2/4
+
+***DELETE***
+
+http://localhost/api.victimas.com/v1/usuarios/2
